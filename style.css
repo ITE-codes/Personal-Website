@@ -46,3 +46,88 @@ body{background-color:#f2ebdf;background-image:linear-gradient(90deg,rgba(247,24
 .power-success{animation:power-success .65s ease-out}@keyframes power-success{0%,40%{box-shadow:0 0 0 5px #e6bd6266,0 0 24px #f2c35c;transform:scale(1.06)}100%{box-shadow:none;transform:scale(1)}}#pause[aria-pressed="true"]{background:#dfc386;color:#182b4a}
 
 .project-video{margin:24px 0;border:2px solid #b99a58;border-radius:16px;overflow:hidden;background:#10233d;box-shadow:0 10px 25px #17365420}.project-video video,.project-video iframe{display:block;width:100%;aspect-ratio:16/9;border:0}.project-video video{height:auto;object-fit:contain}
+
+
+/* Responsive full-width layout: desktop, tablet, and phone */
+:root{--page-gutter:clamp(16px,3.5vw,72px)}
+html{width:100%;overflow-x:clip}
+body{min-width:0;overflow-x:clip}
+header,main,footer{width:calc(100% - 2 * var(--page-gutter));max-width:1680px;min-width:0;margin-left:auto;margin-right:auto}
+header{padding-inline:clamp(16px,2.2vw,38px)}
+main{padding:clamp(32px,4vw,68px) clamp(0px,1vw,12px) 56px}
+footer{padding-inline:clamp(12px,2vw,32px)}
+.hero,.welcome,.intro,.grid,.games,.lower-fun{min-width:0}
+.hero>*,.welcome>*,.intro>*,.grid>*,.games>*,.lower-fun>*{min-width:0}
+.welcome{grid-template-columns:minmax(0,1.35fr) minmax(310px,.85fr);gap:clamp(28px,4vw,76px)}
+.portrait-column{width:100%;max-width:440px}
+.portrait-column .name-tag{max-width:440px}
+.welcome h1{font-size:clamp(40px,3.55vw,72px)}
+.journey{width:100%}
+.page-intro{max-width:min(920px,100%)}
+.project-video iframe,.project-video video,.spotify-frame iframe{max-width:100%}
+img,svg,video,iframe{max-width:100%}
+@media (min-width:1680px){
+  .welcome{grid-template-columns:minmax(0,1.3fr) minmax(360px,.8fr)}
+  .portrait-column{max-width:460px}
+  .portrait-column .name-tag{max-width:460px}
+}
+@media (max-width:1000px){
+  :root{--page-gutter:clamp(18px,3.8vw,38px)}
+  header{gap:14px}
+  nav{gap:clamp(10px,2vw,22px)}
+  .welcome{grid-template-columns:minmax(0,1fr) minmax(270px,.8fr);gap:28px}
+  .portrait-column,.portrait-column .name-tag{max-width:360px}
+  .welcome h1{font-size:clamp(35px,4.4vw,52px)}
+  .journey{padding:20px}
+  .journey-list li{grid-template-columns:72px minmax(0,1fr);gap:13px}
+  .journey-list li::before{left:79px}
+  .journey-list li::after{left:76px}
+}
+@media (max-width:800px){
+  header{height:auto;min-height:78px;flex-wrap:wrap;margin-top:16px}
+  main{padding:35px 0 45px}
+  .welcome{grid-template-columns:minmax(0,1fr);gap:28px}
+  .portrait-column,.portrait-column .name-tag{max-width:min(440px,100%);justify-self:center}
+  .welcome h1{font-size:clamp(37px,7vw,55px)}
+  .intro{grid-template-columns:minmax(0,1fr)}
+  .games{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lower-fun{grid-template-columns:minmax(0,1fr)}
+  footer{padding:24px 4px}
+}
+@media (max-width:600px){
+  :root{--page-gutter:16px}
+  header{padding:14px 16px;gap:12px;margin-top:12px}
+  nav{order:3;flex-basis:100%;justify-content:space-evenly;gap:8px;flex-wrap:wrap}
+  nav a{font-size:clamp(12px,3.3vw,15px)}
+  .github{margin-left:auto}
+  main{padding-top:30px}
+  .welcome{padding-bottom:35px}
+  .welcome h1{font-size:clamp(34px,9vw,44px);letter-spacing:-1.5px}
+  .welcome p{font-size:17px}
+  .journey{padding:19px 16px}
+  .journey-list li{grid-template-columns:74px minmax(0,1fr);gap:12px}
+  .journey-list li::before{left:80px}
+  .journey-list li::after{left:77px}
+  .journey-year{overflow-wrap:anywhere}
+  .games,.grid{grid-template-columns:minmax(0,1fr)}
+  .about-visual{grid-template-columns:minmax(0,1fr)}
+  .intro{padding:20px}
+  .books,.music{padding:clamp(16px,4vw,23px)}
+  .shelf{gap:16px 10px}
+  .solid-book{padding:12px 8px}
+  .solid-book strong{font-size:clamp(11px,3vw,16px)}
+  .solid-book small{font-size:11px}
+  .tag-program{max-width:100%;white-space:normal;text-wrap:balance}
+  .portrait-column{max-width:min(380px,100%)}
+  .portrait-column .name-tag{max-width:100%}
+  .page-intro h1{font-size:clamp(34px,8vw,44px)}
+}
+@media (max-width:360px){
+  .journey-list li{grid-template-columns:64px minmax(0,1fr);gap:10px}
+  .journey-list li::before{left:69px}
+  .journey-list li::after{left:66px}
+  .journey-list h3{font-size:14px}
+  .welcome .journey-list p{font-size:12px}
+  .brand{font-size:28px}
+  .github{padding:8px 10px;font-size:12px}
+}
