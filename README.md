@@ -1,15 +1,19 @@
-# Itohan Eke Portfolio
+Welcome to my personal webpage! 💻
 
-Ready for https://ITE-codes.github.io/Personal-Website/
+I created this website to document my coding journey, showcase projects I've worked on, and share a little about myself beyond academics and programming.
 
-Extract this ZIP, then upload its contents to the root of the Personal-Website repository. Keep assets/, projects/, and fun/ intact. Include .nojekyll if using Git.
+As an Electrical and Computer Engineering student at Cornell University, I'm constantly learning, experimenting, and finding new ways to turn ideas into working projects.
 
-Enable hosting: repository Settings > Pages > Deploy from a branch > main > / (root) > Save.
+This website serves as a collection of my experiences, interests, and growth as an aspiring engineer and developer.
 
-Includes HTML, CSS, JavaScript, SVG/JPG/PNG images, and MP4/WebM gameplay clips. Three-Color Memory Game uses a YouTube embed; music uses a Spotify embed.
+Explore My Website
 
-Local preview (run from the directory containing Personal-Website/):
-python -m http.server 8000
-Open http://localhost:8000/Personal-Website/
+Home: A little about me, my background, and technical interests.
 
-For local preview, rename the extracted folder to Personal-Website. The URLs intentionally use /Personal-Website/ so all pages and assets work on GitHub Pages.
+Projects: Coding projects, engineering experiments, and things I've built along the way.
+
+Just for Fun: A glimpse into my hobbies, favorite activities, and interests outside of coding.
+
+Visit My Website 🌐
+
+https://ite-codes.github.io/Personal-Website/
