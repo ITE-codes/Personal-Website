@@ -8,9 +8,9 @@ This website serves as a collection of my experiences, interests, and growth as 
 
 Explore My Website
 
-Home: A little about me, my background, and technical interests.
+Home: A little about me, my background, and technical skills.
 
-Projects: Coding projects, engineering experiments, and things I've built along the way.
+Projects: Coding projects, engineering systems, and things I've built along the way.
 
 Just for Fun: A glimpse into my hobbies, favorite activities, and interests outside of coding.
 
